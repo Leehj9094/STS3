@@ -29,7 +29,7 @@ public interface UserMapper {
 	
 	@Select("select * from tbl_user")
 	public List<UserDto> selectAll();
-	
+	 
 	@Select("select * from tbl_user")
 	public List<Map<String,Object>> selectAllResultMap();
 	
