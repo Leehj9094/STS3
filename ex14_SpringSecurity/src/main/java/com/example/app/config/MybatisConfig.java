@@ -30,12 +30,12 @@ public class MybatisConfig {
 		return sessionFactory.getObject();
 	}
 	
-	 @Autowired
-	  private SqlSessionFactory sqlSessionFactory;
+//	 @Autowired
+//	  private SqlSessionFactory sqlSessionFactory;
 	
 	  @Bean
-	  public SqlSessionTemplate sqlSessionTemplate() {
-		  return new SqlSessionTemplate(sqlSessionFactory);
+	  public SqlSessionTemplate sqlSessionTemplate() throws Exception {
+		  return new SqlSessionTemplate(sqlSessionFactory());
 	    }
 	
 }
